@@ -1,8 +1,6 @@
 public class Main {
     public static void main(String args[]) {
-        School mySchool = new School("Lord Byng Secondary School",
-            "3939 W 16th Ave, Vancouver, BC V6R 2C9",
-            1201);
+        School mySchool = new School("Lord Byng Secondary School","3939 W 16th Ave, Vancouver, BC V6R 2C9", 1201);
         
         // Add 10 students to student list
         mySchool.addStudent(new Student("Leonardo", "Liang", 11, 2539392));
