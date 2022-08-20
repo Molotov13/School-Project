@@ -5,9 +5,9 @@ public class Teacher {
 
   // Constructor
   public Teacher(String firstName, String lastName, String subject) {
+    this.subject = subject;
     this.firstName = firstName;
     this.lastName = lastName;
-    this.subject = subject;
   }
 
   // This function is designed to convert the teacher information into a string

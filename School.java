@@ -13,8 +13,8 @@ public class School {
   // Constructor
   public School(String name, String location, int studentPopulation) {
     this.name = name;
-    this.location = location;
     this.studentPopulation = studentPopulation;
+    this.location = location;
   }
   
   // Add an object of student to the list of students
@@ -50,8 +50,8 @@ public class School {
   // Return a string containing all student objects
   public String allStudents() {
       String opt = "";
-      for (Student student : students) {
-        opt = opt + "\n" + student;
+      for (int i = 0; i < this.students.size(); i++) {
+        opt = opt + "\n" + this.students.get(i);
       }
       return opt;
   }
@@ -59,8 +59,8 @@ public class School {
   // Return a string containing all teacher objects
   public String allTeachers() {
     String opt = "";
-    for (Teacher teacher : teachers) {
-      opt = opt + "\n" + teacher;
+    for (int i = 0; i < this.teachers.size(); i++) {
+      opt = opt + "\n" + this.teachers.get(i);
     } 
     return opt;
   }

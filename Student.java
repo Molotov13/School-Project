@@ -1,22 +1,24 @@
 // The class Student creates an object of student which contains related information about the student
 public class Student {
-   // Create variables storing the information about the student
-    private String firstName, lastName;
+  // Create variables storing the information about the student
   private int grade, studentNumber;
+  private String firstName, lastName;
+   
 
   // Constructor
   public Student(String firstName, String lastName, int grade, int studentNumber) {
-    this.firstName = firstName;
-    this.lastName = lastName;
     this.grade = grade;
     this.studentNumber = studentNumber;
+    this.firstName = firstName;
+    this.lastName = lastName;
   }
 
   // Check if two student objects are equal
   public boolean equals(Student student) {
     if (this.firstName.equals(student.firstName) && this.lastName.equals(student.lastName) && this.grade == student.grade && this.studentNumber == student.studentNumber) {
       return true;
-    } else {
+    } 
+    else {
       return false;
     }
   }
